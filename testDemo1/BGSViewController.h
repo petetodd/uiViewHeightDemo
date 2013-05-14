@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface BGSViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIView *uiview1;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *uiViewHeight;
 
+
+- (IBAction)changeHeight:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UITableView *uiTableView;
 @end

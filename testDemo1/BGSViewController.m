@@ -26,4 +26,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)changeHeight:(id)sender {
+    // Existing height layout constrant, created in storyboard -uiViewHeight
+    NSLog(@"DEBUG existing height: %@", self.uiViewHeight);
+    self.uiViewHeight.constant = 150.0f;
+    [self.uiview1 setNeedsUpdateConstraints];
+    
+  
+}
 @end
